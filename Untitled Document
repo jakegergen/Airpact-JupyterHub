@@ -1,0 +1,17 @@
+# install python3 and dev headers
+sudo apt-get install -y python3 python3-dev
+
+# pip is great
+sudo apt-get install -y python-pip
+
+# for cryptography (required by twisted[tls])
+sudo apt-get install -y libssl-dev libffi-dev
+
+# for lxml
+sudo apt-get install -y libxml2-dev libxslt1-dev
+
+sudo pip install virtualenvwrapper
+source /usr/local/bin/virtualenvwrapper.sh
+
+# create a Python3 virtualenv
+mkvirtualenv -p python3 scrapy.py3
